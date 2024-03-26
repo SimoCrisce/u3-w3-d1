@@ -29,10 +29,10 @@ export const getJobsAction = (query) => {
         }
       })
       .then((jobs) => {
-        console.log(getState, "STATO CONDIVISO");
+        console.log(getState(), "STATO CONDIVISO");
         dispatch({
           type: GET_JOBS,
-          payload: jobs,
+          payload: jobs.data,
         });
       })
       .catch((error) => console.log(error));

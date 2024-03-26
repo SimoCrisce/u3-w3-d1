@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Favourites = function () {
   const dispatch = useDispatch();
-  const favouritesList = useSelector((state) => state.content);
+  const favouritesList = useSelector((state) => state.favourites.content);
 
   return (
     <Container>
